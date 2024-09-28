@@ -1,7 +1,15 @@
+/*
+Padilla, Renzo Ymanuel L.
+September 12, 2024
+CC1 - 1B: Radix Converter
+ */
+
 import java.util.Scanner;
 
 public class CC1RadixConverterPadilla {
     public static void main(String[] args) {
+
+        //Initialization of the scanner
         Scanner myInput = new Scanner(System.in);
         String outputDec;
         String outputBi;
@@ -142,6 +150,6 @@ public class CC1RadixConverterPadilla {
                     System.out.println("Error! Choice is not in the list! \n Choose an existing choice to proceed!");
                     break;
             }
-            }
+        }
     }
-    }
+}
