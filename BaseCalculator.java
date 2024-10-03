@@ -425,6 +425,237 @@ public class BaseCalculator {
                             }
                         }
                     }
+                    case "2": {
+                        System.out.print("Enter decimal number: ");
+                        input2 = input.nextLine();
+
+                        cDec2 = Integer.parseInt(input2);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cDec1 + cDec2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cDec1 - cDec2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cDec1 * cDec2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cDec1 / cDec2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "3": {
+                        System.out.print("Enter octal number: ");
+                        input2 = input.nextLine();
+
+                        cOct2 = Integer.parseInt(input2,8);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cDec1 + cOct2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cDec1 - cOct2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cDec1 * cOct2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cDec1 / cOct2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "4": {
+                        System.out.print("Enter hexadecimal number: ");
+                        input2 = input.nextLine();
+
+                        cHex2 = Integer.parseInt(input2, 16);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cDec1 + cHex2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cDec1 - cHex2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cDec1 * cHex2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cDec1 / cHex2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             break;
@@ -516,6 +747,237 @@ public class BaseCalculator {
                             }
                         }
                     }
+                    case "2": {
+                        System.out.print("Enter decimal number: ");
+                        input2 = input.nextLine();
+
+                        cDec2 = Integer.parseInt(input2);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cOct1 + cDec2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cOct1 - cDec2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cOct1 * cDec2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cOct1 / cDec2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "3": {
+                        System.out.print("Enter octal number: ");
+                        input2 = input.nextLine();
+
+                        cOct2 = Integer.parseInt(input2,8);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cOct1 + cOct2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cOct1 - cOct2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cOct1 * cOct2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cOct1 / cOct2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "4": {
+                        System.out.print("Enter hexadecimal number: ");
+                        input2 = input.nextLine();
+
+                        cHex2 = Integer.parseInt(input2, 16);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cOct1 + cHex2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cOct1 - cHex2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cOct1 * cHex2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cOct1 / cHex2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             break;
@@ -597,6 +1059,237 @@ public class BaseCalculator {
                                 oOct = Integer.toOctalString(div);
                                 oHex = Integer.toHexString(div);
                                 
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "2": {
+                        System.out.print("Enter decimal number: ");
+                        input2 = input.nextLine();
+
+                        cDec2 = Integer.parseInt(input2);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cHex1 + cDec2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cHex1 - cDec2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cHex1 * cDec2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cHex1 / cDec2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "3": {
+                        System.out.print("Enter octal number: ");
+                        input2 = input.nextLine();
+
+                        cOct2 = Integer.parseInt(input2,8);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cHex1 + cOct2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cHex1 - cOct2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cHex1 * cOct2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cHex1 / cOct2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Quotient: " + div);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                        }
+                    }
+                    case "4": {
+                        System.out.print("Enter hexadecimal number: ");
+                        input2 = input.nextLine();
+
+                        cHex2 = Integer.parseInt(input2, 16);
+
+                        System.out.println("Enter what mathematical operation will be used");
+                        System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division");
+                        op = input.nextLine();
+
+                        switch (op) {
+                            case "1": {
+                                add = cHex1 + cHex2;
+
+                                oBin = Integer.toBinaryString(add);
+                                oDec = Integer.toString(add);
+                                oOct = Integer.toOctalString(add);
+                                oHex = Integer.toHexString(add);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Sum: " + add);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "2": {
+                                sub = cHex1 - cHex2;
+
+                                oBin = Integer.toBinaryString(sub);
+                                oDec = Integer.toString(sub);
+                                oOct = Integer.toOctalString(sub);
+                                oHex = Integer.toHexString(sub);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Difference: " + sub);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "3": {
+                                mul = cHex1 * cHex2;
+
+                                oBin = Integer.toBinaryString(mul);
+                                oDec = Integer.toString(mul);
+                                oOct = Integer.toOctalString(mul);
+                                oHex = Integer.toHexString(mul);
+
+                                System.out.println("The output of the operation is:");
+                                System.out.println("Product: " + mul);
+                                System.out.println("Binary: " + oBin);
+                                System.out.println("Decimal: " + oDec);
+                                System.out.println("Octal: " + oOct);
+                                System.out.println("Hexadecimal: " + oHex.toUpperCase());
+                                break;
+                            }
+                            case "4": {
+                                div = cHex1 / cHex2;
+
+                                oBin = Integer.toBinaryString(div);
+                                oDec = Integer.toString(div);
+                                oOct = Integer.toOctalString(div);
+                                oHex = Integer.toHexString(div);
+
                                 System.out.println("The output of the operation is:");
                                 System.out.println("Quotient: " + div);
                                 System.out.println("Binary: " + oBin);
