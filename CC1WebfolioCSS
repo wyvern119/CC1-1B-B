@@ -1,0 +1,35 @@
+/*Color Scheme*/
+body {
+  background-color: white;
+}
+
+/*Website Design*/
+
+/*Typography*/
+head {
+  font-family:
+  color:
+}
+
+h1 {
+  font-family:
+  color:
+}
+
+h2 {
+  font-family:
+  color:
+}
+
+h3 {
+  font-family:
+  color:
+}
+
+/*Layout and Spacing*/
+
+
+/*Responsive Design Features*/
+
+
+/*Visual Effects*/
